@@ -20,9 +20,9 @@ export default function Home() {
         <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <QRGenerator />
         </section>
-        <SaasFeatures />
-        <SaasPricing />
-        <SaasTestimonials />
+        {/* <SaasFeatures /> */}
+        {/* <SaasPricing /> */}
+        {/* <SaasTestimonials /> */}
       </main>
       <SaasFooter />
     </div>

@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { useState } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 
 export default function SaasHeader() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="bg-black/80 backdrop-blur-sm border-b border-gray-800 sticky top-0 z-50">
@@ -15,21 +15,33 @@ export default function SaasHeader() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500">
-                NeonQR
+                QrWeaver
               </span>
             </Link>
 
             <nav className="hidden md:ml-10 md:flex md:space-x-8">
-              <Link href="#features" className="text-gray-300 hover:text-white transition-colors">
+              <Link
+                href="#features"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
                 Features
               </Link>
-              <Link href="#pricing" className="text-gray-300 hover:text-white transition-colors">
+              <Link
+                href="#pricing"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
                 Pricing
               </Link>
-              <Link href="#testimonials" className="text-gray-300 hover:text-white transition-colors">
+              <Link
+                href="#testimonials"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
                 Testimonials
               </Link>
-              <Link href="#faq" className="text-gray-300 hover:text-white transition-colors">
+              <Link
+                href="#faq"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
                 FAQ
               </Link>
             </nav>
@@ -92,7 +104,10 @@ export default function SaasHeader() {
           </div>
           <div className="pt-4 pb-3 border-t border-gray-800">
             <div className="flex items-center px-5">
-              <Button variant="ghost" className="w-full text-gray-300 justify-center">
+              <Button
+                variant="ghost"
+                className="w-full text-gray-300 justify-center"
+              >
                 Sign In
               </Button>
             </div>
@@ -105,6 +120,5 @@ export default function SaasHeader() {
         </div>
       )}
     </header>
-  )
+  );
 }
-

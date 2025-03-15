@@ -1,15 +1,16 @@
-import QRGenerator from "@/components/qr-generator"
-import SaasHeader from "@/components/saas-header"
-import SaasFeatures from "@/components/saas-features"
-import SaasPricing from "@/components/saas-pricing"
-import SaasTestimonials from "@/components/saas-testimonials"
-import SaasFooter from "@/components/saas-footer"
-import type { Metadata } from "next"
+import QRGenerator from "@/components/qr-generator";
+import SaasHeader from "@/components/saas-header";
+import SaasFeatures from "@/components/saas-features";
+import SaasPricing from "@/components/saas-pricing";
+import SaasTestimonials from "@/components/saas-testimonials";
+import SaasFooter from "@/components/saas-footer";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "NeonQR - Professional QR Code Generator",
-  description: "Create customized QR codes for your business with our neon-themed generator",
-}
+  title: "QRWeaver - Professional QR Code Generator",
+  description:
+    "Create customized QR codes for your business with our secured QR generator",
+};
 
 export default function Home() {
   return (
@@ -25,6 +26,5 @@ export default function Home() {
       </main>
       <SaasFooter />
     </div>
-  )
+  );
 }
-
